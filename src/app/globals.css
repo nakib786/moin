@@ -248,10 +248,10 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
   }
   .menu-icon-box {
-    width: 40px;
-    height: 40px;
+    width: 36px !important;
+    height: 36px !important;
     border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    border-radius: 10px !important;
+    border-radius: 8px !important;
     margin-left: 0 !important;
   }
   .call-btn-mobile {

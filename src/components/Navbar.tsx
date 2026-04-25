@@ -236,15 +236,41 @@ export default function Navbar() {
                 <div className="menu-info-footer">
                   <div className="info-item">
                     <h4>LOCATION</h4>
-                    <p>MUMBAI, INDIA</p>
+                    <p>AMADHARA, GUJARAT</p>
+                    <a 
+                      href="https://maps.google.com/maps?q=The%20Moin%20chicken,%20Amadhara,%20Gujarat" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "6px",
+                        marginTop: "8px",
+                        fontSize: "11px",
+                        color: gold,
+                        textDecoration: "none",
+                        letterSpacing: "0.1em",
+                        opacity: 0.8,
+                        borderBottom: `1px solid ${gold}`
+                      }}
+                    >
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                      GET DIRECTIONS
+                    </a>
                   </div>
                   <div className="info-item">
                     <h4>CONTACT</h4>
-                    <p>+91 99047 96786</p>
+                    <a href="tel:+919737919786" style={{ color: gold, textDecoration: "none", fontFamily: "var(--font-serif)", fontSize: "1.1rem" }}>
+                      +91 97379 19786
+                    </a>
                   </div>
                   <div className="info-item" style={{ opacity: 0.6 }}>
                     <h4>SOCIALS</h4>
-                    <p>INSTAGRAM / FB</p>
+                    <div style={{ display: 'flex', gap: '8px' }}>
+                      <a href="https://www.instagram.com/moinchicken" target="_blank" rel="noopener noreferrer" style={{ color: gold, textDecoration: "none" }}>INSTAGRAM</a>
+                      <span>/</span>
+                      <a href="https://www.facebook.com/moinchicken" target="_blank" rel="noopener noreferrer" style={{ color: gold, textDecoration: "none" }}>FB</a>
+                    </div>
                   </div>
                 </div>
               </motion.div>

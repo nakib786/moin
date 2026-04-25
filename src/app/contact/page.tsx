@@ -53,27 +53,22 @@ export default function ContactPage() {
         </div>
 
         {/* Section 3: Map */}
-        <div className="about-card map-card">
-          <Image
-            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1000&auto=format&fit=crop"
-            alt="Amadhara Map"
-            fill
-            style={{ objectFit: "cover", filter: "invert(90%) hue-rotate(180deg) brightness(0.5) contrast(1.2)" }}
-            unoptimized
+        <div className="about-card map-card" style={{ padding: 0, overflow: "hidden", position: "relative" }}>
+          <iframe
+            src="https://maps.google.com/maps?q=The%20Moin%20chicken,%20Amadhara,%20Gujarat&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{
+              border: 0,
+              filter: "invert(90%) hue-rotate(180deg) brightness(0.85) contrast(1.2)",
+              position: "absolute",
+              top: 0,
+              left: 0
+            }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           />
-          <div style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            color: "var(--accent)",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center"
-          }}>
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <span style={{ fontSize: "10px", marginTop: "5px", letterSpacing: "0.1em", background: "rgba(0,0,0,0.8)", padding: "2px 8px", borderRadius: "4px" }}>AMADHARA</span>
-          </div>
         </div>
 
         {/* Section 4: Contact Info */}
@@ -90,18 +85,25 @@ export default function ContactPage() {
             </div>
             <div className="info-row">
               <div className="info-label">PHONE</div>
-              <div className="info-value">+91 97379 19786</div>
+              <div className="info-value">
+                <a href="tel:+919737919786" style={{ color: "var(--accent)", textDecoration: "none" }}>+91 97379 19786</a>
+              </div>
             </div>
             <div className="info-row">
               <div className="info-label">EMAIL</div>
-              <div className="info-value">hello@moin.com</div>
+              <div className="info-value">
+                <a href="mailto:hello@moinchicken.com" style={{ color: "var(--accent)", textDecoration: "none" }}>hello@moinchicken.com</a>
+              </div>
             </div>
             <div className="info-row">
               <div className="info-label">FOLLOW</div>
               <div className="social-icons-contact" style={{ display: 'flex', gap: '15px' }}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                <a href="https://www.instagram.com/moinchicken" target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent)" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.facebook.com/moinchicken" target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent)" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.6 }}><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
               </div>
             </div>
           </div>

@@ -14,8 +14,8 @@ const forum = Forum({
 });
 
 export const metadata: Metadata = {
-  title: "Qitchen | Sushi Sensation",
-  description: "Experience the art of sushi at Qitchen.",
+  title: "The Moin Chicken",
+  description: "Experience the deliciousness at The Moin Chicken.",
 };
 
 import SplitLayout from "@/components/SplitLayout";
