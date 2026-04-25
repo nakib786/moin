@@ -29,11 +29,14 @@ export default function Dashboard() {
               style={{ objectFit: "cover", objectPosition: (card as any).position || "center" }}
               unoptimized
             />
+            <div className="card-glow"></div>
             <div className="card-overlay">
-              <h3 className="card-title">
-                {card.title}
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </h3>
+              <div className="card-cutout">
+                <h3 className="card-title">
+                  {card.title}
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </h3>
+              </div>
             </div>
           </motion.div>
         </Link>
