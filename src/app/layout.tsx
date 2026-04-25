@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${forum.variable}`}>
-      <body style={{ backgroundColor: "#0a0a0a", color: "#fff" }}>
+      <body style={{ color: "#fff", background: "transparent" }}>
         <SplitLayout>
           {children}
         </SplitLayout>
