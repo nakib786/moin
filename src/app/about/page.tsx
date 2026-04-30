@@ -51,7 +51,8 @@ export default function AboutPage() {
               alt="Chicken Artistry"
               fill
               style={{ objectFit: "cover" }}
-              unoptimized
+              quality={75}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
             <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.1)" }} />
           </motion.div>
@@ -121,7 +122,8 @@ export default function AboutPage() {
                 alt="Our Story"
                 fill
                 style={{ objectFit: "cover" }}
-                unoptimized
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 30vw"
               />
             </motion.div>
           </AnimatePresence>

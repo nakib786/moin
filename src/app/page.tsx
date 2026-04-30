@@ -27,7 +27,8 @@ export default function Dashboard() {
               alt={card.title}
               fill
               style={{ objectFit: "cover", objectPosition: (card as any).position || "center" }}
-              unoptimized
+              quality={75}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
             />
             <div className="card-glow"></div>
             <div className="card-overlay">

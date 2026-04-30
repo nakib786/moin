@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 };
 
 import SplitLayout from "@/components/SplitLayout";
+import PageLoader from "@/components/PageLoader";
 
 export default function RootLayout({
   children,
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${forum.variable}`}>
       <body style={{ color: "#fff", background: "transparent" }}>
+        <PageLoader />
         <SplitLayout>
           {children}
         </SplitLayout>

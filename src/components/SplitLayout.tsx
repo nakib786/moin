@@ -59,8 +59,8 @@ export default function SplitLayout({ children }: { children: React.ReactNode })
               fill
               className="split-visual-image"
               priority
-              unoptimized
-              sizes="(max-width: 768px) 100vw, 50vw"
+              quality={75}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 75vw, 50vw"
             />
             <div className="left-panel-overlay" />
           </motion.div>

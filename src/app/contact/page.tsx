@@ -39,16 +39,16 @@ export default function ContactPage() {
         {/* Section 2: Gallery Grid */}
         <div className="gallery-card">
           <div className="gallery-item">
-            <Image src="/images/mamna.jpg" alt="Gallery 1" fill style={{ objectFit: "cover" }} unoptimized />
+            <Image src="/images/mamna.jpg" alt="Gallery 1" fill style={{ objectFit: "cover" }} quality={65} sizes="(max-width: 768px) 50vw, 25vw" />
           </div>
           <div className="gallery-item">
-            <Image src="/images/Menu.jpg" alt="Gallery 2" fill style={{ objectFit: "cover" }} unoptimized />
+            <Image src="/images/Menu.jpg" alt="Gallery 2" fill style={{ objectFit: "cover" }} quality={65} sizes="(max-width: 768px) 50vw, 25vw" />
           </div>
           <div className="gallery-item">
-            <Image src="/images/contactus.jpg" alt="Gallery 3" fill style={{ objectFit: "cover" }} unoptimized />
+            <Image src="/images/contactus.jpg" alt="Gallery 3" fill style={{ objectFit: "cover" }} quality={65} sizes="(max-width: 768px) 50vw, 25vw" />
           </div>
           <div className="gallery-item">
-            <Image src="/images/mamna.jpg" alt="Gallery 4" fill style={{ objectFit: "cover" }} unoptimized />
+            <Image src="/images/mamna.jpg" alt="Gallery 4" fill style={{ objectFit: "cover" }} quality={65} sizes="(max-width: 768px) 50vw, 25vw" />
           </div>
         </div>
 
